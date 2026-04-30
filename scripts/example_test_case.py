@@ -12,7 +12,6 @@ import time
 import numpy as np 
 import matplotlib.image as mpimg
 
-# import ex9 as utils
 import assignment_1_astar as utils
 
 def print_stats(path, visited, delta_time):
@@ -62,8 +61,8 @@ def test_3(planner, planner_str):
     
 if __name__ == '__main__':
     print("uninformed: ")
-    test_1(utils.plan_path_uninformed, "ex1")
-    test_2(utils.plan_path_uninformed, "ex1")
+    test_1(utils.plan_path_uninformed, "uninformed")
+    test_2(utils.plan_path_uninformed, "uninformed")
 
     print("A*: ")
     test_1(utils.plan_path_astar, "astar")
