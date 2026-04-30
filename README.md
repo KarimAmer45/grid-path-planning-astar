@@ -27,3 +27,24 @@ python example_test_case.py
 ```
 
 The example script writes path visualizations for each planner.
+
+## Result screenshots
+
+![grid-path-planning-astar result screenshot](docs/results/result-screenshot.png)
+
+Planner comparison across uninformed search, A*, and weighted A* on the provided map.
+
+
+## What this demonstrates
+
+- Search behavior tradeoffs between BFS-style expansion, A*, and weighted A*.
+- Occupancy-map loading and visual path export from a compact Python implementation.
+- Instrumentation for path length, explored nodes, and runtime.
+
+
+## Limitations and next steps
+
+- The planner uses a 4-connected grid and does not model continuous robot geometry.
+- Weighted A* is faster but may produce a less optimal path.
+- Next steps: add diagonal motion, obstacle inflation, and benchmark summaries.
+
